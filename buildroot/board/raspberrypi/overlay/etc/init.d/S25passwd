@@ -1,0 +1,14 @@
+#!/bin/sh
+
+if [ ! -e /boot/password.txt ]
+then
+	echo "Custom password not found!"
+	exit 0
+fi
+
+source /boot/password.txt
+
+passwd root > /dev/null << END
+$ROOT_PASSWORD
+$ROOT_PASSWORD
+END
