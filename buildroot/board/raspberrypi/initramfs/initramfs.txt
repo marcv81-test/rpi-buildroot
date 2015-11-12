@@ -1,0 +1,22 @@
+# Kernel dirs
+dir /proc 755 0 0
+dir /sys 755 0 0
+
+# Devices dir
+dir /dev 755 0 0
+nod /dev/console 644 0 0 c 5 1
+
+# Bin dirs
+dir /bin 755 0 0
+dir /sbin 755 0 0
+dir /usr 755 0 0
+dir /usr/bin 755 0 0
+dir /usr/sbin 755 0 0
+file /bin/busybox ../../../output/target/bin/busybox 755 0 0
+
+# Init script
+file /init ../../../board/raspberrypi/initramfs/init.sh 755 0 0
+
+# Mount points
+dir /boot 755 0 0
+dir /rootfs 755 0 0
