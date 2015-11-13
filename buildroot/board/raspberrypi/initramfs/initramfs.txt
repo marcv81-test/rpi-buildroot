@@ -14,6 +14,9 @@ dir /usr/bin 755 0 0
 dir /usr/sbin 755 0 0
 file /bin/busybox ../../../output/target/bin/busybox 755 0 0
 
+# Run dir
+dir /run 755 0 0
+
 # Init script
 file /init ../../../board/raspberrypi/initramfs/init.sh 755 0 0
 
