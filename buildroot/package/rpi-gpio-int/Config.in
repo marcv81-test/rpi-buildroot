@@ -1,0 +1,4 @@
+config BR2_PACKAGE_RPI_GPIO_INT
+	bool "rpi-gpio-int"
+	help
+	  Raspberry Pi interrupt-based GPIO data acquisition module.
